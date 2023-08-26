@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>CRUD de Usuarios</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div id="container">
+      <h1>Operaciones</h1>
+      <div id="input-container">
+        <input type="text" id="name" placeholder="Nombre">
+        <input type="email" id="email" placeholder="Email">
+        <button id="add-btn">Añadir</button>
+      </div>
+      <table>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Nombre</th>
+            <th>Email</th>
+            <th>Acciones</th>
+          </tr>
+        </thead>
+        <tbody id="table-body"></tbody>
+      </table>
+      <div id="update-container">
+        <input type="text" id="update-name">
+        <input type="text" id="update-email">
+        <button id="update-btn">Editar</button>
+        <button id="cancel-btn">Cancelar</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
